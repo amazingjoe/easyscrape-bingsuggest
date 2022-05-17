@@ -1,6 +1,6 @@
-# EasyScrape-AmazonSuggest
+# EasyScrape-BingSuggest
 
-Scrape Amazon Searchbar Suggested Terms
+Scrape Bing Searchbar Suggested Terms
 
 <img src="https://github.com/amazingjoe/amazingjoe.github.io/blob/main/imgs/Easyscrape.png" width="50%"/>
 
@@ -9,19 +9,19 @@ Scrape Amazon Searchbar Suggested Terms
 1. Install:
 
 ```
-pip install easyscrape-amazonsuggest
+pip install easyscrape-bingsuggest
 ```
 
-2. Get Google Suggestions for a Search Term:
+2. Get Bing Suggestions for a Search Term:
 
 ```python
-from easyscrape_amazomsuggest import querysuggestions as AS
+from easyscrape_binguggest import querysuggestions as BS
 
 # Request suggestions for a search term
-ASResults = AS.query("Mony Python")
-ASResults
+BSResults = BS.query("Mony Python")
+BSResults
 
-['monty python shirt', 'monty python and the holy grail', 'monty python', 'monty python blu ray', 'monty python gifts', 'monty python and the holy grail merchandise', 'monty python flying circus complete series', 'monty python dvd', 'monty python door mat', 'monty python fluxx']
+['Monty Python', 'monty python', 'monty python and the holy grail', 'monty python movies', "monty python's flying circus", 'monty python cast', 'monty python spam', 'monty python life of brian', 'monty python quotes']
 ```
 
-3. AS.query returns a list of strings with the results.
+3. BS.query returns a list of strings with the results.
